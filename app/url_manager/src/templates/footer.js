@@ -7,7 +7,7 @@ function Footer(props) {
                     <a href="#contact">Contact</a>
                 </div>
                 <div className="about-link">
-                    <a href="#contact">About</a>
+                    <a href="/about">About</a>
                 </div>
             </footer>
         </div>
