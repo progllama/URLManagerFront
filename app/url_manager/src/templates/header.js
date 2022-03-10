@@ -1,3 +1,4 @@
+import './footer.css'
 
 function Header(props)
 {
@@ -5,9 +6,8 @@ function Header(props)
         <div className="header">
             <a href="#default" className="logo">URL Manager</a>
             <div className="header-right">
-                <a className="active" href="#home">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a className="login" href="#login">SingIn</a>
+                <a className="SingUp" href="SignUp">SignUp</a>
             </div>
         </div>
     );
