@@ -22,7 +22,7 @@ function App() {
 
 function Header() {
   return (
-    <Navbar className="h-100" bg="primary" variant="dark">
+    <Navbar bg="primary" variant="dark">
       <Container>
         <Navbar.Brand><h1>Url Plumber</h1></Navbar.Brand>
         <Nav className="me-auto">
@@ -39,14 +39,13 @@ function Content() {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
+  overflow-y: hidden;
   `
 
   return (
     <Wrapper>
       <SideBar />
-      <Container>
-        <Main />
-      </Container>
+      <Main />
     </Wrapper>
   )
 }
@@ -55,7 +54,9 @@ function SideBar() {
   const Wrapper = styled.nav`
       min-width: 270px;
       max-width: 270px;
+      overflow-y: scroll;
       flex-grow: 1;
+      position: sticky;
       `
   return (
     <Wrapper className="bg-light text-dark">
@@ -101,6 +102,85 @@ function SideBar() {
         <li>
           <a href="#">Contact</a>
         </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+
       </ul>
     </Wrapper>
   );
@@ -108,51 +188,58 @@ function SideBar() {
 
 function Main() {
   const Wrapper = styled.div`
-  margin-top: 30px;
-  margin-left: 5%;
+    overflow: visible;
+  `
+
+  const Wrapper2 = styled.div`
+  overflow: visible;
+  flex-grow: 1;
+  background-color: pink;
   `
   return (
     <Wrapper>
-      <h2>List Title</h2>
-      <p></p>
-      <hr />
-      <p></p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
-      <p>Test</p>
+      <Wrapper2>
+        <h2>List Title</h2>
+        <p></p>
+        <hr />
+        <p></p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+        <p>Test</p>
+      </Wrapper2>
     </Wrapper>
   );
 }
