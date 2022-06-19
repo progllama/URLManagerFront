@@ -55,132 +55,25 @@ function SideBar() {
       min-width: 270px;
       max-width: 270px;
       overflow-y: scroll;
-      flex-grow: 1;
-      position: sticky;
+      border-right: solid 1px gray;
       `
+
+  const Title = styled.h2`
+  margin: 20px;
+  `
+
+  const ListItem = styled.div`
+    padding-left: 20px;
+  `
+
   return (
-    <Wrapper className="bg-light text-dark">
-      <div className="sidebar-header">
-        <h2>Lists</h2>
-      </div>
+    <Wrapper className="text-dark">
+      <Title>Lists</Title>
 
-      <ul className="list-unstyled components">
-        <li className="active">
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
-          <ul className="collapse list-unstyled" id="homeSubmenu">
-            <li>
-              <a href="#">Home 1</a>
-            </li>
-            <li>
-              <a href="#">Home 2</a>
-            </li>
-            <li>
-              <a href="#">Home 3</a>
-            </li>
-          </ul>
+      <ul>
+        <li className="no-styled">
+          sample
         </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
-          <ul className="collapse list-unstyled" id="pageSubmenu">
-            <li>
-              <a href="#">Page 1</a>
-            </li>
-            <li>
-              <a href="#">Page 2</a>
-            </li>
-            <li>
-              <a href="#">Page 3</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-
       </ul>
     </Wrapper>
   );
@@ -188,58 +81,21 @@ function SideBar() {
 
 function Main() {
   const Wrapper = styled.div`
-    overflow: visible;
+  margin: 20px auto 20px 50px;
+  width: 100%;
+  overflow-y: scroll;
   `
 
-  const Wrapper2 = styled.div`
-  overflow: visible;
-  flex-grow: 1;
-  background-color: pink;
+  const Title = styled.h2`
   `
+
   return (
     <Wrapper>
-      <Wrapper2>
-        <h2>List Title</h2>
-        <p></p>
-        <hr />
-        <p></p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-        <p>Test</p>
-      </Wrapper2>
+      <Title>List Title</Title>
+      <p></p>
+      <hr />
+      <p></p>
+      <p>Test</p>
     </Wrapper>
   );
 }
